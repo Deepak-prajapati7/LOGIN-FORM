@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 320px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            height: 38px;
+            padding: 6px 10px;   
+            border: 1px solid #777;
+            border-radius: 4px;
+        }
+        button{
+            display:inline-block;
+            background-color: rgb(19, 41, 232);
+            color:white;
+            padding:5px 10px 10px 10px; 
+            font-size:16px;
+            border-radius:5px;  
+            width:100%;
+
+        }
+
+        button:hover {
+            background-color: rgb(92, 142, 249);
+        }
+        p, h2 {
+            text-align: center;
+        }
+        a{
+            text-align: center;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="background-image">
+        <img src="background-image.avif" alt="Background Image" style="width:100vw; height:100vh; position:absolute; top:0; left:0; z-index:-1; object-fit:cover;">
+    </div>
+
+    <div class="login-container">
+        <form class="login-form">
+
+            <div class="input-group">
+                <label for="username"></label>
+                <input type="text" id="username" name="username" required placeholder ="Enter Email">
+            </div>
+
+            <div class="input-group">
+                <label for="password"></label>
+                <input type="password" id="password" name="password" required placeholder="Enter Password">
+            </div>
+
+            <button type="submit">Login</button><br><br>
+            <h2>OR </h2>
+            <p>
+                New User? Create an Account
+            </p>
+            <button type="submit">SignUp</button><br><br>
+            <a href="#">Forgot Password?</a><br><br>
+
+        </form>
+    </div>
+
+</body>
+</html>
